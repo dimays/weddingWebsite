@@ -299,12 +299,12 @@ th, td {
 
 @media only screen and (max-width: 480px) {
   h2, #bannerHeader {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
   }
   h3, td {
     font-size: 1.5rem;
   }
-  h4, li, th {
+  h4, li, p, th {
     font-size: 2rem;
   }
   .description {
