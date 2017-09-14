@@ -166,16 +166,16 @@ li {
 }
 
 .bannerBox {
-  padding: 5% 7% 5% 7%;
+  padding: 5% 7% 2% 7%;
   background-color: #90A09F; //grey-green
 }
 
 #ringPic {
-  margin: 10% auto 8% auto;
+  margin: 10% auto 5% auto;
 }
 
 #scroll {
-  padding: 20% 7% 14% 7%;
+  padding: 12% 7% 5% 7%;
 }
 
 #nav {
@@ -193,7 +193,7 @@ li {
 
 .section {
   padding: 5% 10%;
-  margin-bottom: 14px;
+  margin-bottom: 28px;
   background-color: #90A09F; //grey-green
 }
 
@@ -203,8 +203,12 @@ li {
   max-width: 625px;
 }
 
+.sectionHeader {
+  margin-bottom: 3%;
+}
+
 #story {
-  border-top: 14px solid #E9E8ED; //off-white
+  border-top: 28px solid #E9E8ED; //off-white
 }
 
 .storyText {
@@ -219,7 +223,7 @@ li {
 }
 
 .schedule {
-  width: 85%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -248,29 +252,18 @@ th, td {
   h2, h5 {
     font-size: 3rem;
   }
-
-  h3, p {
-    font-size: 2.5rem;
-  }
 }
 
 @media only screen and (max-width: 750px) {
-  .schedule {
-    width: 100%
+  .sectionContent {
+    100%;
   }
-
+  .section {
+    padding: 5% 5%;
+  }
   h1, h4 {
     font-size: 2.75rem;
   }
-
-  h2, h5 {
-    font-size: 2.25rem;
-  }
-
-  h3, p {
-    font-size: 2rem;
-  }
-
 }
 
 @media only screen and (max-width: 650px) {
@@ -279,12 +272,6 @@ th, td {
   }
   h2, h5 {
     font-size: 2.75rem;
-  }
-  h3, p {
-    font-size: 2.5rem;
-  }
-  .sectionContent {
-    width: 100%;
   }
   .section {
     padding: 5% 2%;
@@ -309,6 +296,12 @@ th, td {
 @media only screen and (max-width: 480px) {
   #bannerHeader {
     font-size: 2rem;
+  }
+  h2 {
+    font-size: 2.25rem;
+  }
+  h3 {
+    font-size: 1.75rem;
   }
   li {
     margin-left: 1%;
