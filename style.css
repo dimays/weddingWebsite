@@ -1,0 +1,309 @@
+/**********************
+Font Families:
+  font-family: 'Bombshell Pro', cursive;
+  font-family: 'Amatic SC', cursive;
+
+Color Pallette:
+  #90A09F; //grey-green
+  #000; //black
+  #5A6B75; //grey-blue
+  #E9E8ED; //off-white
+***********************/
+
+@font-face {
+  font-family: 'Bombshell Pro';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Bombshell Pro'), url('Bombshell Pro.woff') format('woff');
+}
+
+
+/***********
+COMING SOON
+***********/
+
+/*html {
+  background-color: #E9E8ED; //off-white
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: 'Amatic SC', cursive;
+  color: #000; //black
+}
+
+h1 {
+  font-family: 'Bombshell Pro', cursive;
+}
+
+h2 {
+  margin-bottom: 5%;
+}
+
+h3 {
+  font-size: 1.75em;
+}
+
+h4 {
+  font-size: 2.75em;
+  color: #FFF; //white
+}
+
+.announcement {
+  background-color: #5A6B75; //grey-blue
+  margin: 10% auto 0% auto;
+  width: 100%;
+  height: 80px;
+}
+
+.splashImg {
+  margin: 5% auto;
+  width: 100%;
+}
+
+.splashImg img {
+  max-width: 500px;
+}
+
+.main {
+  margin: 5% auto 10% auto;
+}
+
+.bottomBanner {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #90A09F; //grey-green
+  color: #FFF; //white
+}*/
+
+/******
+WEBSITE
+******/
+
+html {
+  background-color: #5A6B75; //grey-blue
+  font-size: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Bombshell Pro', cursive;
+  font-weight: 100;
+  text-align: center;
+  color: #FFF; //white
+}
+
+h3, h4, h5, p, td {
+  color: #000; //black
+}
+
+.eventCol {
+  color: #FFF; //white
+}
+
+h2, h5, p, li, a, th, td {
+  font-family: 'Amatic SC', cursive;
+}
+
+p {
+  text-align: justify;
+  text-indent: 2.5rem;
+  margin: 2% auto;
+}
+
+a {
+  text-decoration: none;
+  color: #E9E8ED; //off-white
+}
+
+a:hover {
+  color: #5A6B75; //grey-blue
+}
+
+h1, h4 {
+  font-size: 4rem;
+}
+
+h2, h5 {
+  font-size: 3.5rem;
+}
+
+h3, p, li {
+  font-size: 2.75rem;
+}
+
+th {
+  font-size: 2.5rem;
+}
+
+td {
+  font-size: 2rem;
+}
+
+a {
+  font-size: inherit;
+}
+
+.description {
+  font-size: 1.5rem;
+}
+
+li {
+  display: inline-block;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+#banner, #main, #scroll {
+  background-color: #E9E8ED; //off-white
+}
+
+.bannerBox {
+  padding: 5% 7% 5% 7%;
+  background-color: #90A09F; //grey-green
+}
+
+#ringPic {
+  margin: 10% auto 8% auto;
+}
+
+#scroll {
+  padding: 20% 7% 14% 7%;
+}
+
+#nav {
+  margin: 1% auto;
+}
+
+.navBar {
+  background-color: #5A6B75; //grey-blue
+}
+
+.navBtn:hover {
+  cursor: pointer;
+  color: #90A09F; //grey-green
+}
+
+.section {
+  padding: 5% 10%;
+  margin-bottom: 14px;
+  background-color: #90A09F; //grey-green
+}
+
+.sectionContent {
+  width: 80%;
+  margin: 0% auto;
+  max-width: 625px;
+}
+
+#story {
+  border-top: 14px solid #E9E8ED; //off-white
+}
+
+.storyText {
+  margin-bottom: 10%;
+}
+
+#scheduleHeader {
+  width: 75%;
+  margin: 4% auto;
+  padding-top: 4%;
+  border-top: 2px solid black;
+}
+
+.schedule {
+  width: 85%;
+  margin: 0 auto;
+}
+
+table {
+  margin: 2% auto;
+}
+
+th, td {
+  border-bottom: 2px solid black;
+  background-color: #90A09F; //grey-green
+}
+
+#eventTb, #timeTb {
+  width: 20%;
+}
+
+#locationTb, #descriptionTb {
+  width: 30%;
+}
+
+@media only screen and (max-width: 930px) {
+  h1, h4 {
+    font-size: 3.25rem;
+  }
+
+  h2, h5 {
+    font-size: 3rem;
+  }
+
+  h3, p {
+    font-size: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .schedule {
+    width: 100%
+  }
+
+  h1, h4 {
+    font-size: 2.75rem;
+  }
+
+  h2, h5 {
+    font-size: 2.25rem;
+  }
+
+  h3, p {
+    font-size: 2rem;
+  }
+
+}
+
+@media only screen and (max-width: 650px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  .sectionContent {
+    width: 100%;
+  }
+  .section {
+    padding: 5% 7%;
+  }
+  #ringPic {
+    margin: 5% auto 4% auto;
+  }
+  #scroll {
+    padding: 12% 7% 5% 7%;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .section {
+    padding: 5% 3%;
+  }
+  h1 {
+    font-size: 2.25rem;
+  }
+  li {
+    font-size: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  //Change the layout to accomodate mobile devices
+  //Ensure all items are large enough to see clearly and touch easily
+}
