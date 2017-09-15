@@ -101,7 +101,7 @@ html {
   font-family: 'Bombshell Pro', cursive;
   font-weight: 100;
   text-align: center;
-  color: #f1f1f4; //off-white
+  color: #fff; //white
 }
 
 /*********
@@ -219,7 +219,7 @@ a {
   font-family: inherit;
   font-size: inherit;
   text-shadow: 1px 1px 1px #6f8490; //grey-blue
-  color: #f1f1f4; //off-white
+  color: #fff; //white
 }
 
 a:hover {
@@ -267,7 +267,7 @@ td {
 
 .eventName {
   text-shadow: 1px 1px 2px #6f8490; //grey-blue
-  color: #f1f1f4; //off-white
+  color: #fff //white
 }
 
 .description {
@@ -356,16 +356,13 @@ Responsive Media Inquiries
 
 @media only screen and (max-width: 480px) {
   #bannerHeader, h2, h3 {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
   }
   td {
     font-size: 1.5rem;
   }
-  h4, li, p, th {
+  h4, h5, li, p, th {
     font-size: 2rem;
-  }
-  h5 {
-    font-size: 2.25rem;
   }
   .description {
     font-size: 1rem;
