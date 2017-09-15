@@ -85,8 +85,12 @@ h4 {
 WEBSITE
 ******/
 
+/********************
+Large Scale Selectors
+********************/
+
 html {
-  background-color: #5A6B75; //grey-blue
+  background-color: #6f8490; //grey-blue
   font-size: 16px;
 }
 
@@ -97,143 +101,61 @@ html {
   font-family: 'Bombshell Pro', cursive;
   font-weight: 100;
   text-align: center;
-  color: #FFF; //white
+  color: #f1f1f4; //off-white
 }
 
-h3, h4, h5, p, td {
-  color: #000; //black
-}
+/*********
+Containers
+*********/
 
-.eventName {
-  font-weight: bold;
-}
-
-h2, h5, p, li, a, th, td {
-  font-family: 'Amatic SC', cursive;
-}
-
-p {
-  text-align: justify;
-  text-indent: 2.5rem;
-  margin: 2% auto;
-}
-
-a {
-  text-decoration: none;
-  color: #E9E8ED; //off-white
-}
-
-a:hover {
-  color: #5A6B75; //grey-blue
-}
-
-h1, h4 {
-  font-size: 4rem;
-}
-
-h2, h5 {
-  font-size: 3.5rem;
-}
-
-h3, p, li {
-  font-size: 2.75rem;
-}
-
-th {
-  font-size: 2.5rem;
-}
-
-td {
-  font-size: 2rem;
-}
-
-a {
-  font-size: inherit;
-}
-
-.description {
-  font-size: 1.5rem;
-}
-
-li {
-  display: inline-block;
-  margin-left: 3%;
-  margin-right: 3%;
-}
-
-#banner, #main, #scroll {
-  background-color: #E9E8ED; //off-white
+.banner, .scroll, .main {
+  background-color: #f1f1f4; //off-white
 }
 
 .bannerBox {
-  padding: 5% 7% 2% 7%;
-  background-color: #90A09F; //grey-green
+  padding: 10% 7% 4% 7%;
+  background-color: #aad4ca; //grey-green
 }
 
-#ringPic {
-  margin: 10% auto 5% auto;
-}
-
-#scroll {
+.scroll {
   padding: 12% 7% 5% 7%;
 }
 
-#nav {
+.nav {
   margin: 1% auto;
+  background-color: #6f8490; //grey-blue
 }
 
-.navBar {
-  background-color: #5A6B75; //grey-blue
-}
-
-.navBtn:hover {
-  cursor: pointer;
-  color: #90A09F; //grey-green
+.main {
+  border-top: 28px solid #f1f1f4; //off-white
 }
 
 .section {
   padding: 5% 10%;
   margin-bottom: 28px;
-  background-color: #90A09F; //grey-green
+  background-color: #aad4ca; //grey-green
 }
 
 .sectionContent {
   width: 80%;
-  margin: 0% auto;
+  margin: 3% auto;
   max-width: 625px;
-}
-
-.sectionHeader {
-  margin-bottom: 3%;
-}
-
-#story {
-  border-top: 28px solid #E9E8ED; //off-white
 }
 
 .storyText {
   margin-bottom: 10%;
 }
 
-#scheduleHeader {
-  width: 75%;
+.scheduleHeader {
+  width: 65%;
   margin: 4% auto;
   padding-top: 5%;
   border-top: 2px solid black;
 }
 
-.schedule {
-  width: 100%;
-  margin: 0 auto;
-}
-
 table {
-  margin-bottom: 2%;
-}
-
-th, td {
-  border-bottom: 2px solid black;
-  background-color: #90A09F; //grey-green
+  margin-bottom: 3%;
+  border-collapse: collapse;
 }
 
 #eventTb, #timeTb {
@@ -244,6 +166,118 @@ th, td {
   width: 30%;
 }
 
+/*****
+Images
+*****/
+
+#ringPic {
+  margin: 16% auto 5% auto;
+}
+
+/************
+Text Elements
+************/
+
+h1 {
+  font-size: 4rem;
+  text-shadow: 1px 1px 2px #6f8490; //grey-blue
+}
+
+h2 {
+  font-family: 'Amatic SC', cursive;
+  font-size: 3.5rem;
+  color: #000; //black
+}
+
+h3 {
+  font-size: 2.75rem;
+  color: #000; //black
+}
+
+h4 {
+  font-size: 4rem;
+  color: #000; //black
+}
+
+h5 {
+  font-family: 'Amatic SC', cursive;
+  font-size: 3.5rem;
+  color: #000; //black
+}
+
+p {
+  font-family: 'Amatic SC', cursive;
+  font-size: 2.75rem;
+  text-align: justify;
+  text-indent: 2.5rem;
+  margin: 2% auto;
+  color: #000; //black
+}
+
+a {
+  text-decoration: none;
+  font-family: inherit;
+  font-size: inherit;
+  text-shadow: 1px 1px 1px #6f8490; //grey-blue
+  color: #f1f1f4; //off-white
+}
+
+a:hover {
+  color: #6f8490; //grey-blue
+}
+
+li {
+  display: inline-block;
+  margin-left: 3%;
+  margin-right: 3%;
+  font-family: 'Amatic SC', cursive;
+  font-size: 2.75rem;
+  text-shadow: 1px 1px 1px #000; //black
+}
+
+.logoItem {
+  font-size: 2.25rem;
+  margin-left: 8%;
+  margin-right: 8%;
+}
+
+.navBtn:hover {
+  cursor: pointer;
+  color: #aad4ca; //grey-green
+}
+
+th, td {
+  font-family: 'Amatic SC', cursive;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  border-bottom: 2px solid black;
+  background-color: #aad4ca; //grey-green
+}
+
+th {
+  font-size: 2.5rem;
+  color: #6f8490; //grey-blue
+  text-shadow: 1px 1px 2px #000; //black
+}
+
+td {
+  font-size: 2rem;
+  color: #000; //black
+}
+
+.eventName {
+  text-shadow: 1px 1px 2px #6f8490; //grey-blue
+  color: #f1f1f4; //off-white
+}
+
+.description {
+  font-size: 1.5rem;
+}
+
+/*************************
+Responsive Media Inquiries
+*************************/
+
 @media only screen and (max-width: 930px) {
   h1, h4 {
     font-size: 3.25rem;
@@ -251,6 +285,11 @@ th, td {
 
   h2, h5 {
     font-size: 3rem;
+  }
+  .navBtn {
+    font-size: 2.5rem;
+    margin-left: 2%;
+    margin-right: 2%;
   }
 }
 
@@ -265,6 +304,11 @@ th, td {
   h1, h4 {
     font-size: 2.75rem;
   }
+  .logoItem {
+    font-size: 1.75rem;
+    margin-left: 6%;
+    margin-right: 6%;
+  }
   p {
   text-indent: 2rem;
   }
@@ -277,13 +321,16 @@ th, td {
   h2, h5 {
     font-size: 2.75rem;
   }
+  h3 {
+    font-size: 2.25rem;
+  }
   .section {
     padding: 5% 2%;
   }
   #ringPic {
     margin: 5% auto 4% auto;
   }
-  #scroll {
+  .scroll {
     padding: 12% 7% 5% 7%;
   }
 }
@@ -292,20 +339,26 @@ th, td {
   h1, #bannerHeader {
     font-size: 2.25rem;
   }
-  li {
-    font-size: 2.5rem;
-  }
   p {
     font-size: 2.25rem;
     text-indent: 1.5rem;
   }
+  .logoItem {
+    font-size: 1.5rem;
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+  .navBtn {
+    font-size: 2.75rem;
+    display: block;
+  }
 }
 
 @media only screen and (max-width: 480px) {
-  h2, #bannerHeader {
-    font-size: 1.5rem;
+  #bannerHeader, h2, h3 {
+    font-size: 1.75rem;
   }
-  h3, td {
+  td {
     font-size: 1.5rem;
   }
   h4, li, p, th {
@@ -317,8 +370,9 @@ th, td {
   .description {
     font-size: 1rem;
   }
-  li {
-    margin-left: 1%;
-    margin-right: 1%;
+  .logoItem {
+    margin-left: 2%;
+    margin-right: 2%;
   }
 }
+
