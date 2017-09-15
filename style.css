@@ -246,6 +246,10 @@ li {
   color: #aad4ca; //grey-green
 }
 
+#rsvpHeader {
+  letter-spacing: 0.5rem;
+}
+
 th, td {
   font-family: 'Amatic SC', cursive;
   padding-top: 1%;
@@ -372,4 +376,5 @@ Responsive Media Inquiries
     margin-right: 2%;
   }
 }
+
 
