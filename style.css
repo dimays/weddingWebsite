@@ -46,7 +46,7 @@ Containers
 }
 
 .bannerBox {
-  padding: 6% 4% 25% 25%;
+  padding: 6% 4% 20% 25%;
   background-image: url("weddingLandscape.jpg");
   background-size: cover;
 }
@@ -115,12 +115,13 @@ h2 {
   font-family: 'Amatic SC', cursive;
   font-size: 3.5rem;
   color: #000;
-  text-shadow: 1px 1px 2px #6f8490;
 }
 
 h3 {
-  font-size: 2.75rem;
-  color: #000; //black
+  font-family: 'Amatic SC', cursive;
+  font-size: 2rem;
+  color: #000;
+  margin-top: 15%;
 }
 
 h5 {
@@ -168,11 +169,6 @@ li {
   text-shadow: 1px 1px 1px #000;
 }
 
-.logoItem {
-  margin-left: 8%;
-  margin-right: 8%;
-}
-
 .navBtn:hover {
   cursor: pointer;
   color: #bfd9cc;
@@ -215,9 +211,11 @@ Responsive Media Inquiries
   #bannerHeader {
     font-size: 3.5rem;
   }
-
   h2 {
     font-size: 3rem;
+  }
+  h3 {
+    font-size: 1.75rem;
   }
 }
 
@@ -225,11 +223,12 @@ Responsive Media Inquiries
   #bannerHeader {
     font-size: 3rem;
   }
-
   h2 {
     font-size: 2.5rem;
   }
-
+  h3 {
+    font-size: 1.5rem;
+  }
   h1 {
     font-size: 3.25rem;
   }
@@ -258,6 +257,9 @@ Responsive Media Inquiries
   }
   h2 {
     font-size: 2.25rem;
+  }
+  h3 {
+    font-size: 1.25rem;
   }
   h6 {
     font-size: 2.25rem;
@@ -290,27 +292,17 @@ Responsive Media Inquiries
   li {
     font-size: 1.75rem;
   }
-  .logoItem {
-    margin-left: 6%;
-    margin-right: 6%;
-  }
   p {
   text-indent: 2rem;
   }
 }
 
 @media only screen and (max-width: 650px) {
-  .bannerBox {
-    padding: 6% 8% 25% 25%;
-  }
   .section {
     padding: 2% 2%;
   }
   h5 {
     font-size: 2.75rem;
-  }
-  h3 {
-    font-size: 2.25rem;
   }
 }
 
@@ -319,7 +311,10 @@ Responsive Media Inquiries
     font-size: 1.5rem;
   }
   h2 {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1rem;
   }
   h1{
     font-size: 2.25rem;
@@ -334,18 +329,11 @@ Responsive Media Inquiries
   li {
     font-size: 1.5rem;
   }
-  .logoItem {
-    margin-left: 4%;
-    margin-right: 4%;
-  }
 }
 
 @media only screen and (max-width: 480px) {
   #bannerHeader {
     font-size: 1.25rem;
-  }
-  h3 {
-    font-size: 1.5rem;
   }
   td, .navBtn {
     font-size: 1.5rem;
@@ -355,10 +343,6 @@ Responsive Media Inquiries
   }
   .description {
     font-size: 1rem;
-  }
-  .logoItem {
-    margin-left: 2%;
-    margin-right: 2%;
   }
   h6 {
     font-size: 1.5rem;
