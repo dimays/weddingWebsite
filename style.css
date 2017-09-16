@@ -17,74 +17,6 @@ Color Pallette:
   src: local('Bombshell Pro'), url('Bombshell Pro.woff') format('woff');
 }
 
-
-/***********
-COMING SOON
-***********/
-
-/*html {
-  background-color: #E9E8ED; //off-white
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-align: center;
-  font-family: 'Amatic SC', cursive;
-  color: #000; //black
-}
-
-h1 {
-  font-family: 'Bombshell Pro', cursive;
-}
-
-h2 {
-  margin-bottom: 5%;
-}
-
-h3 {
-  font-size: 1.75em;
-}
-
-h4 {
-  font-size: 2.75em;
-  color: #FFF; //white
-}
-
-.announcement {
-  background-color: #5A6B75; //grey-blue
-  margin: 10% auto 0% auto;
-  width: 100%;
-  height: 80px;
-}
-
-.splashImg {
-  margin: 5% auto;
-  width: 100%;
-}
-
-.splashImg img {
-  max-width: 500px;
-}
-
-.main {
-  margin: 5% auto 10% auto;
-}
-
-.bottomBanner {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  height: 60px;
-  background-color: #90A09F; //grey-green
-  color: #FFF; //white
-}*/
-
-/******
-WEBSITE
-******/
-
 /********************
 Large Scale Selectors
 ********************/
@@ -171,29 +103,23 @@ Text Elements
 ************/
 
 #bannerHeader {
-  color: #f1f1f4;
-  font-weight: 600;
-  text-shadow: 1px 1px 5px #6f8490;
+  color: #000;
 }
 
 h1 {
   font-size: 4rem;
-  text-shadow: 1px 1px 3px #6f8490;
+  text-shadow: 1px 1px 2px #6f8490;
 }
 
 h2 {
   font-family: 'Amatic SC', cursive;
   font-size: 3.5rem;
-  color: #000; //black
+  color: #000;
+  text-shadow: 1px 1px 2px #6f8490;
 }
 
 h3 {
   font-size: 2.75rem;
-  color: #000; //black
-}
-
-h4 {
-  font-size: 4rem;
   color: #000; //black
 }
 
@@ -207,9 +133,9 @@ h6 {
   width: 65%;
   padding-bottom: 1%;
   margin: 1% auto 1% auto;
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid #fff;
   font-size: 3rem;
-  text-shadow: 1px 1px 2px #000;
+  text-shadow: 1px 1px 1px #000;
 }
 
 p {
@@ -230,7 +156,7 @@ a {
 }
 
 a:hover {
-  color: #6f8490; //grey-blue
+  color: #6f8490;
 }
 
 li {
@@ -304,7 +230,7 @@ Responsive Media Inquiries
     font-size: 2.5rem;
   }
 
-  h1, h4 {
+  h1 {
     font-size: 3.25rem;
   }
 
@@ -324,10 +250,12 @@ Responsive Media Inquiries
 }
 
 @media only screen and (max-width: 875px) {
+  h6, .sectionContent, .scheduleHeader, th, td{
+    border-width: 1px;
+  }
   #bannerHeader {
     font-size: 2.5rem;
   }
-
   h2 {
     font-size: 2.25rem;
   }
@@ -353,7 +281,7 @@ Responsive Media Inquiries
   h2 {
     font-size: 1.75rem;
   }
-  h1, h4 {
+  h1 {
     font-size: 2.75rem;
   }
   h6 {
@@ -422,7 +350,7 @@ Responsive Media Inquiries
   td, .navBtn {
     font-size: 1.5rem;
   }
-  h4, h5, p, th {
+  h5, p, th {
     font-size: 2rem;
   }
   .description {
@@ -440,4 +368,3 @@ Responsive Media Inquiries
     font-size: 2rem;
   }
 }
-
