@@ -135,7 +135,7 @@ h6 {
   margin: 1% auto 1% auto;
   border-bottom: 2px solid #fff;
   font-size: 3rem;
-  text-shadow: 1px 1px 1px #000;
+  text-shadow: none;
 }
 
 p {
