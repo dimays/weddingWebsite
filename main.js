@@ -2,8 +2,8 @@
 
 function main() {
 // Fades in banner Pic over 5 seconds
-  $('#bannerPic').hide();
-  $('#bannerPic').fadeIn(5000);
+  $('.bannerBox').hide();
+  $('.bannerBox').fadeIn(5000);
 
 // When a button is clicked, scroll immediately to the top of the associated element
   $('#storyBtn').on('click', function() {
