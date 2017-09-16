@@ -170,8 +170,10 @@ table {
 Text Elements
 ************/
 
-bannerheader {
+#bannerHeader {
+  color: #f1f1f4;
   font-weight: 600;
+  text-shadow: 1px 1px 5px #6f8490;
 }
 
 h1 {
