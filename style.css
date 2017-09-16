@@ -170,6 +170,10 @@ table {
 Text Elements
 ************/
 
+bannerheader {
+  font-weight: 600;
+}
+
 h1 {
   font-size: 4rem;
   text-shadow: 1px 1px 3px #6f8490;
