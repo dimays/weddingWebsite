@@ -6,13 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Maddie & David's Wedding</title>
     <link href="style.css" rel="stylesheet" type="text/css"/>
-    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Julius+Sans+One|Encode+Sans+Condensed:300" rel="stylesheet"/>
   </head>
 
   <body>
     <div class="banner">
-
-      <div class="bannerBox">
+      <div class="bannerContent">
         <h1 id="bannerHeader">Maddie & David</h1>
         <h2>are getting married!</h2>
         <h3>THREE OAKS, MI | 08.18.18</h3>
@@ -20,81 +19,92 @@
     </div>
 
     <div class="nav">
-      <h6>==find out more++</h6>
+      <h4>==find out more++</h4>
+      <div class="line">
+      </div>
       <ul>
-        <li class="navBtn" id="storyBtn">Our Story</li>
-        <li class="navBtn" id="detailsBtn">Event Details</li>
-        <li class="navBtn" id="accomodationsBtn">Accomodations</li>
-        <li class="navBtn" id="rsvpBtn">RSVP</li>
-        <li class="navBtn" id="giftsBtn">Gifts</li>
+        <li id="storyBtn">our story</li>
+        <li id="detailsBtn">event  details</li>
+        <li id="accomodationsBtn">accomodations</li>
+        <li id="rsvpBtn">rsvp</li>
+        <li id="giftsBtn">gifts</li>
       </ul>
     </div>
 
     <div class="main">
-
-      <div class="section">
-        <h1 id="storyHeader">==our story++</h1>
+      <div class="section" id="storySection">
+        <div class="sectionHeader" id="storyHeader">
+          <h1>Our Story</h1>
+        </div>
         <div class="sectionContent">
-          <h5>- Chapter I -</h5>
-          <div class="storyText" id="chI">
+          <h5>Chapter I</h5>
+          <div class="storyBody">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           </div>
-          <h5>- CHAPTER II -</h5>
-          <div class="storyText" id="chII">
+          <h5>CHAPTER II</h5>
+          <div class="storyBody">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
         </div>
       </div>
 
-      <div class="section">
-        <h1 id="detailsHeader">==event details++</h1>
+      <div class="section" id="detailsSection">
+        <div class="sectionHeader" id="detailsHeader">
+          <h1>Event Details</h1>
+        </div>
         <div class="sectionContent">
           <p>The ceremony and reception will take place at <a href="http://www.journeymandistillery.com/weddings/" target="_blank">Journeyman Distillery</a> in one of our favorite places, Three Oaks, MI.</p>
           <p>All of the day's events will be formal occasions, but please wear whatever makes you feel comfortable.</p>
         </div>
         <div class="scheduleHeader">
-          <h5>- Schedule of Events -</h5>
+          <h6>Schedule of Events</h6>
         </div>
         <table>
           <tr>
-            <th id="eventTb">EVENT</th>
-            <th id="timeTb">TIME</th>
-            <th id="locationTb">LOCATION</th>
-            <th id="descriptionTb">DETAILS</th>
+            <th id="eventTb">event</th>
+            <th id="timeTb">time</th>
+            <th id="locationTb">location</th>
+            <th id="descriptionTb">details</th>
           </tr>
           <tr>
-            <td class="eventName">Rehearsal Dinner</td>
-            <td>7pm | 08.17</td>
+            <td>Rehearsal Dinner</td>
+            <td>08.17 | 7pm</td>
             <td>Journeyman Distillery</td>
             <td class="description">This is the general description of the rehearsal dinner, including the food options, dress code, etc.</td>
           </tr>
           <tr>
-            <td class="eventName">Ceremony</td>
-            <td>5pm | 08.18</td>
+            <td>Ceremony</td>
+            <td>08.18 | 5pm</td>
             <td>Journeyman Distillery</td>
             <td class="description">This is the general description of the rehearsal dinner, including the food options, dress code, etc.</td>
           </tr>
         </table>
       </div>
 
-      <div class="section">
-        <h1 id="accomodationsHeader">==accomodations++</h1>
+      <div class="section" id="accomodationsSection">
+        <div class="sectionHeader" id="accomodationsHeader">
+          <h1>Accomodations</h1>
+        </div>
         <div class="sectionContent">
           <p>This is the section for info on accomodations.</p>
         </div>
       </div>
 
-      <div class="section">
-        <h1 id="rsvpHeader">R.S.V.P.</h1>
+      <div class="section" id="rsvpSection">
+        <div class="sectionHeader" id="rsvpHeader">
+          <h1>R.S.V.P.</h1>
+        </div>
         <div class="sectionContent">
           <p>This is the section for the RSVP form.</p>
         </div>
       </div>
 
-      <div class="section">
-        <h1 id="giftsHeader">==gifts++</h1>
+      <div class="section" id="giftsSection">
+        <div class="sectionHeader" id="giftsHeader">
+          <h1>Gifts</h1>
+        </div>
         <div class="sectionContent">
           <p>As many of you know, we have been blessed to have the last five years to build a home together. For that reason, we are only asking that you join us in our celebration!</p>
           <p>However, if you'd like to offer a gift to celebrate the occasion, below there is a registry option as well as an option to contribute towards our honeymoon.</p>
@@ -106,3 +116,4 @@
     <script src='main.js'></script>
   </body>
 </html>
+
