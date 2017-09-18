@@ -30,63 +30,66 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Bombshell Pro', cursive;
+  font-family: 'Julius Sans One', sans-serif;
   font-weight: 100;
   text-align: center;
   color: #fff;
-  text-shadow: 1px 1px 2px #fff;
 }
 
 /*********
 Containers
 *********/
 
-.banner, .main {
+.banner {
+  padding: 6% 4% 20% 25%;
   background-color: #f1f1f4;
-}
-
-.bannerBox {
-  padding: 6% 4% 25% 25%;
   background-image: url("weddingLandscape.jpg");
   background-size: cover;
 }
 
 .nav {
-  margin: 1% auto;
-  background-color: #6f8490;
-}
-
-.main {
-  border-top: 28px solid #f1f1f4;
+  margin: 4% auto;
 }
 
 .section {
-  padding: 2% 10%;
-  margin-bottom: 28px;
-  background-color: #bfd9cc;
+  padding: 4% 10% 20% 10%;
+  background-color: #afcfbf;
+}
+
+#storySection {
+  margin-top: 0%;
+}
+
+#giftsSection {
+  margin-bottom: 6%;
+}
+
+.sectionHeader {
+  width: 65%;
+  padding: 2% 0;
+  margin: 0% auto;
+  border-bottom: 2px solid #000;
 }
 
 .sectionContent {
-  width: 80%;
-  margin: 2% auto;
-  padding: 4% 0%;
+  width: 75%;
+  margin: 8% auto;
   max-width: 625px;
-  border-top: 2px solid #fff;
 }
 
-.storyText {
-  margin-bottom: 10%;
+.storyBody {
+  padding: 0 3%;
+  margin: 2% auto 10% auto;
 }
 
 .scheduleHeader {
   width: 65%;
-  margin: 4% auto;
+  margin: 4% auto 2% auto;
   padding-top: 5%;
   border-top: 2px solid #000;
 }
 
 table {
-  margin-bottom: 3%;
   border-collapse: collapse;
 }
 
@@ -102,57 +105,61 @@ table {
 Text Elements
 ************/
 
-#bannerHeader {
+#bannerHeader, h2, h3, h5, p, td {
   color: #000;
 }
 
+#bannerHeader {
+  font-size: 4.5rem;
+  font-weight: 300;
+}
+
 h1 {
+  font-family: 'Bombshell Pro', cursive;
   font-size: 4rem;
   text-shadow: 1px 1px 2px #6f8490;
 }
 
 h2 {
-  font-family: 'Amatic SC', cursive;
-  font-size: 3.5rem;
-  color: #000;
+  font-size: 2.5rem;
+  margin: 2% auto 15% auto;
 }
 
 h3 {
-  font-family: 'Amatic SC', cursive;
-  font-size: 2rem;
-  color: #000;
-  margin-top: 12%;
+  font-size: 1.5rem;
+}
+
+h4, h6 {
+  font-family: 'Bombshell Pro', cursive;
+  font-size: 3rem;
 }
 
 h5 {
-  font-family: 'Amatic SC', cursive;
-  font-size: 3.5rem;
-  color: #000;
+  font-size: 2.75rem;
+}
+
+.line {
+  width: 65%;
+  margin: 0 auto 2.5% auto;
+  border-bottom: 2px solid #fff;
 }
 
 h6 {
-  width: 65%;
-  padding-bottom: 1%;
-  margin: 1% auto 1% auto;
-  border-bottom: 2px solid #fff;
-  font-size: 3rem;
-  text-shadow: none;
+  text-shadow: 1px 1px 2px #6f8490;
 }
 
 p {
-  font-family: 'Amatic SC', cursive;
-  font-size: 2.75rem;
+  font-family: 'Encode Sans Condensed', sans-serif;
+  font-size: 2rem;
   text-align: justify;
   text-indent: 2.5rem;
-  margin: 2% auto;
-  color: #000;
+  margin: 4% auto;
 }
 
 a {
   text-decoration: none;
   font-family: inherit;
   font-size: inherit;
-  text-shadow: 1px 1px 1px #6f8490;
   color: #fff;
 }
 
@@ -162,44 +169,35 @@ a:hover {
 
 li {
   display: inline-block;
-  margin-left: 3%;
-  margin-right: 3%;
-  font-family: 'Amatic SC', cursive;
-  font-size: 2.75rem;
+  margin-left: 2%;
+  margin-right: 2%;
+  font-size: 2rem;
   text-shadow: 1px 1px 1px #000;
 }
 
-.navBtn:hover {
+li:hover {
   cursor: pointer;
-  color: #bfd9cc;
+  color: #afcfbf;
 }
 
 th, td {
-  font-family: 'Amatic SC', cursive;
-  padding-top: 1%;
-  padding-bottom: 1%;
   border-bottom: 2px solid black;
-  background-color: #bfd9cc;
 }
 
 th {
+  padding-bottom: 2%;
+  color: #fff;
+  text-shadow: 1px 1px 3px #6f8490;
   font-size: 2.5rem;
-  color: #6f8490;
-  text-shadow: 1px 1px 3px #fff;
 }
 
 td {
+  padding: 1% 0%;
   font-size: 2rem;
-  color: #000;
-  text-shadow: none;
-}
-
-.eventName {
-    color: #fff;
-    text-shadow: 1px 1px 3px #6f8490;
 }
 
 .description {
+  font-family: 'Encode Sans Condensed', sans-serif;
   font-size: 1.5rem;
 }
 
@@ -209,146 +207,200 @@ Responsive Media Inquiries
 
 @media only screen and (max-width: 1200px) {
   #bannerHeader {
+    font-size: 4rem;
+  }
+  h1 {
     font-size: 3.5rem;
   }
-  h2 {
-    font-size: 3rem;
+  h2, th {
+    font-size: 2.25rem;
   }
-  h3 {
+  h3, .description {
+    font-size: 1.35rem;
+  }
+  h4, h6 {
+    font-size: 2.75rem;
+  }
+  li, td {
     font-size: 1.75rem;
   }
 }
 
 @media only screen and (max-width: 1050px) {
   #bannerHeader {
-    font-size: 3rem;
-  }
-  h2 {
-    font-size: 2.5rem;
-  }
-  h3 {
-    font-size: 1.5rem;
+    font-size: 3.75rem;
   }
   h1 {
-    font-size: 3.25rem;
+    font-size: 3.35rem;
   }
+  h2, th {
+    font-size: 2.1rem;
+  }
+  h3, .description {
+    font-size: 1.25rem;
+  }
+  h4, h6 {
+    font-size: 2.5rem;
+  }
+  li, td {
+    font-size: 1.65rem;
+  }
+}
 
+@media only screen and (max-width: 975px) {
+  #bannerHeader {
+    font-size: 3.5rem;
+  }
+  h1 {
+    font-size: 3.15rem;
+  }
+  h2, th {
+    font-size: 2rem;
+  }
+  h3, .description {
+    font-size: 1.15rem;
+  }
+  h4, h6 {
+    font-size: 2.35rem;
+  }
   h5 {
-    font-size: 3rem;
-  }
-  h6 {
     font-size: 2.5rem;
   }
-  li {
-    font-size: 2.5rem;
+  p {
+    font-size: 1.75rem;
   }
-  .navBtn {
-    margin-left: 2%;
-    margin-right: 2%;
+  li, td {
+    font-size: 1.5rem;
   }
 }
 
 @media only screen and (max-width: 875px) {
-  h6, .sectionContent, .scheduleHeader, th, td{
-    border-width: 1px;
-  }
   #bannerHeader {
-    font-size: 2.5rem;
+    font-size: 3.25rem;
   }
-  h2 {
-    font-size: 2.25rem;
+  h1 {
+    font-size: 2.9rem;
   }
-  h3 {
-    font-size: 1.25rem;
+  h2, th {
+    font-size: 1.8rem;
   }
-  h6 {
-    font-size: 2.25rem;
+  h3, .description {
+    font-size: 1.1rem;
   }
-  li {
-    font-size: 2rem;
+  h4, h6 {
+    font-size: 2.2rem;
+  }
+  td {
+    font-size: 1.35rem;
   }
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 775px) {
   .sectionContent {
-    width: 97%;
+    width: 95%;
     max-width: 480px;
   }
   .section {
-    padding: 2% 5%;
+    padding: 4% 5% 20% 5%;
   }
   #bannerHeader {
-    font-size: 2rem;
-  }
-  h2 {
-    font-size: 1.75rem;
-  }
-  h1 {
     font-size: 2.75rem;
   }
-  h6 {
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2, th {
+    font-size: 1.5rem;
+  }
+  h3, .description {
+    font-size: 0.9rem;
+  }
+  h4, h6 {
+    font-size: 1.85rem;
+  }
+  h5 {
     font-size: 2rem;
   }
-  li {
-    font-size: 1.75rem;
-  }
   p {
-  text-indent: 2rem;
+    font-size: 1.6rem;
+  }
+  td {
+    font-size: 1.2rem;
   }
 }
 
 @media only screen and (max-width: 650px) {
   .section {
-    padding: 2% 2%;
+    padding: 4% 3% 20% 3%;
   }
-  h5 {
-    font-size: 2.75rem;
+  #bannerHeader {
+    font-size: 2.25rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h2, th {
+    font-size: 1.25rem;
+  }
+  h3, .description {
+    font-size: 0.75rem;
+  }
+  h6 {
+    font-size: 1.65rem;
+  }
+  td {
+    font-size: 1rem;
   }
 }
 
 @media only screen and (max-width: 540px) {
   #bannerHeader {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
-  h2 {
-    font-size: 1.5rem;
-  }
-  h3 {
-    font-size: 1rem;
-  }
-  h1{
-    font-size: 2.25rem;
-  }
-  p {
-    font-size: 2.25rem;
-    text-indent: 1.5rem;
-  }
-  h6 {
+  h1, h4 {
     font-size: 1.75rem;
   }
-  li {
+  h2, th {
+    font-size: 1.15rem;
+  }
+  h3 {
+    font-size: 0.6rem;
+  }
+  h6 {
     font-size: 1.5rem;
   }
 }
 
 @media only screen and (max-width: 480px) {
   #bannerHeader {
-    font-size: 1.25rem;
+    font-size: 1.75rem;
   }
-  td, .navBtn {
-    font-size: 1.5rem;
-  }
-  h5, p, th {
-    font-size: 2rem;
-  }
-  .description {
+  h2 {
     font-size: 1rem;
   }
   h6 {
+    font-size: 1.3rem;
+  }
+  li {
+    font-size: 1.75rem;
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  #bannerHeader {
+    font-size: 1.4rem;
+  }
+  h1 {
     font-size: 1.5rem;
   }
-  .navBtn {
-    display: block;
-    font-size: 2rem;
+  h2 {
+    font-size: .8rem;
+  }
+  h5 {
+    font-size: 1.75rem;
+  }
+  p {
+    font-size: 1.4rem;
   }
 }
