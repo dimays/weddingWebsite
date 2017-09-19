@@ -1,13 +1,14 @@
 /**********************
 Font Families:
   font-family: 'Bombshell Pro', cursive;
-  font-family: 'Amatic SC', cursive;
+  font-family: 'Julius Sans One', cursive;
 
 Color Pallette:
-  #90A09F; //grey-green
+  #afcfbf; //grey-green
   #000; //black
-  #5A6B75; //grey-blue
-  #E9E8ED; //off-white
+  #fff; //white
+  #6f8490; //grey-blue
+  #f1f1f4; //off-white
 ***********************/
 
 @font-face {
@@ -158,18 +159,13 @@ table {
   width: 30%;
 }
 
-.mainTd, .dateTd {
+.mainTd {
   border-bottom: none;
   vertical-align: bottom;
 }
 
-.subTd, .timeTd {
+.subTd {
   vertical-align: top;
-}
-
-.timeTd, .dateTd {
-  margin: 0;
-  padding: 0;
 }
 
 /************
@@ -509,4 +505,3 @@ Responsive Media Inquiries
     font-size: 0.75rem;
   }
 }
-
