@@ -54,13 +54,14 @@
           <h1>Event Details</h1>
         </div>
         <div class="sectionContent">
-          <p>The ceremony and reception will take place at <a href="http://www.journeymandistillery.com/weddings/" target="_blank">Journeyman Distillery</a> in one of our favorite places, Three Oaks, MI.</p>
-          <p>All of the day's events will be formal occasions, but please wear whatever makes you feel comfortable.</p>
+          <p>We are celebrating our marriage in one of our favorite corners of the globe, Three Oaks, MI.</p>
+          <p>The ceremony and reception will take place at Journeyman Distillery, and some of our favorite venues will be hosting us throughout the weekend. You can find a full schedule of events and directions to each venue below.</p>
+          <p>These are formal, but celebratory occasions; we recommend you wear comfortable, festive attire.</p>
         </div>
-        <div class="scheduleHeader">
+        <div class="subSectionHeader" id="scheduleHeader">
           <h6>Schedule of Events</h6>
         </div>
-        <table>
+        <table id="scheduleTable">
           <tr>
             <th id="eventTb">event</th>
             <th id="timeTb">time</th>
@@ -68,16 +69,57 @@
             <th id="descriptionTb">details</th>
           </tr>
           <tr>
-            <td>Rehearsal Dinner</td>
-            <td>08.17 | 7pm</td>
-            <td>Journeyman Distillery</td>
-            <td class="description">This is the general description of the rehearsal dinner, including the food options, dress code, etc.</td>
+            <td rowspan="2">Rehearsal Dinner</td>
+            <td class="dateTd">08.17</td>
+            <td rowspan="2">TBD</td>
+            <td rowspan="2" class="description">A chance to gather together and eat some beautiful food the night before the ceremony.</td>
+          </tr>
+          <tr></td>
+            <td class="timeTd">TBD</td>
           </tr>
           <tr>
-            <td>Ceremony</td>
-            <td>08.18 | 5pm</td>
-            <td>Journeyman Distillery</td>
-            <td class="description">This is the general description of the rehearsal dinner, including the food options, dress code, etc.</td>
+            <td rowspan="2">Ceremony</td>
+            <td class="dateTd">08.18</td>
+            <td rowspan="2">Journeyman Distillery</td>
+            <td rowspan="2" class="description">The brief ceremony will be held by the fathers of the bride and groom, Steve LaKind and Pastor Jon Mays.</td>
+          </tr>
+          <tr>
+            <td class="timeTd">5pm</td>
+          </tr>
+          <tr>
+            <td rowspan="2">Reception</td>
+            <td class="dateTd">08.18</td>
+            <td rowspan="2">Journeyman Distillery</td>
+            <td rowspan="2" class="description">Dinner and a night of dancing to immdediately follow the ceremony.</td>
+          </tr>
+          <tr>
+            <td class="timeTd">5:30pm</td>
+          </tr>
+          <tr>
+            <td rowspan="2">Sunday Brunch</td>
+            <td class="dateTd">08.19</td>
+            <td rowspan="2">TBD</td>
+            <td rowspan="2" class="description">Wake up late, gather once more, and break some bread.</td>
+          </tr>
+          <tr>
+            <td class="timeTd">TBD</td>
+          </tr>
+          <tr>
+        </table>
+        <div class="subSectionHeader" id="directionsHeader">
+          <h6>Directions</h6>
+        </div>
+        <table id="directionsTable">
+          <tr>
+            <th id="venueTb">venue</th>
+            <th id="directionsTb">directions</th>
+          </tr>
+          <tr>
+            <td rowspan="2">Journeyman Distillery</td>
+            <td class="mainTd" id="dirJM">To get to Journeyman Distillery, you first go to grandmother's house, over the river and through the woods.</td>
+          </tr>
+          <tr>
+            <td class="subTd" id="subDirJM">To get to Warren Hall
           </tr>
         </table>
       </div>
@@ -105,8 +147,16 @@
           <h1>Gifts</h1>
         </div>
         <div class="sectionContent">
-          <p>As many of you know, we have been blessed to have the last five years to build a home together. For that reason, we are only asking that you join us in our celebration!</p>
-          <p>However, if you'd like to offer a gift to celebrate the occasion, below there is a registry option as well as an option to contribute towards our honeymoon.</p>
+          <p>As many of you know, we have been blessed to have the last five years to build a home together. We have many of the things we need, so we are only requesting that you join us in our celebration!</p>
+          <p>However, if you'd like to offer a gift to celebrate the occasion, you may find a gift on our registry or contribute to our honeymoon by choosing one of the options below.</p>
+          <div class="giftsBody">
+            <a href="http://google.com" target="_blank"><div class="giftsBtn" id="registryBtn">
+              <h3>registry</h3>
+            </div></a>
+            <a href="http://google.com" target="_blank"><div class="giftsBtn" id="honeymoonBtn">
+              <h3>honeymoon</h3>
+            </div></a>
+          </div>
         </div>
       </div>
     </div>
@@ -115,3 +165,4 @@
     <script src='main.js'></script>
   </body>
 </html>
+
