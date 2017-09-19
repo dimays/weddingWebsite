@@ -79,21 +79,75 @@ Containers
 }
 
 .storyBody {
-  padding: 0 3%;
   margin: 2% auto 10% auto;
 }
 
-.scheduleHeader {
+.subSectionHeader {
   width: 65%;
   min-width: 250px;
-  margin: 4% auto 2% auto;
+  margin: 6% auto 4% auto;
   padding-top: 5%;
+}
+
+.giftsBody {
+  margin-top: 8%;
+}
+
+.giftsBtn {
+  background-position: top center;
+  background-size: cover;
+  display: inline-block;
+  width: 47%;
+  padding-top: 225px;
+  height: 275px;
+  border-radius: 8%;
+  text-shadow: 1px 1px 1px #fff;
+}
+
+.giftsBtn:hover {
+  cursor: pointer;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+}
+
+#registryBtn {
+  background-image: url("gifts.jpeg");
+  margin-right: 2%;
+}
+
+#registryBtn:hover {
+  background-image: url("giftsDark.jpg");
+}
+
+#honeymoonBtn {
+  background-image: url("honeymoon.jpg");
+  margin-left: 2%;
+}
+
+#honeymoonBtn:hover {
+  background-image: url("honeymoonDark.jpeg");
+}
+
+#scheduleHeader {
   border-top: 2px solid #000;
 }
 
 table {
-  margin-bottom: 4%;
   border-collapse: collapse;
+  margin-bottom: 2%;
+}
+
+#directionsTable {
+  margin-bottom: 4%;
+}
+
+#venueTb {
+  width: 30%;
+}
+
+#directionsTb {
+  text-align: center;
+  width: 70%;
 }
 
 #eventTb, #timeTb {
@@ -104,11 +158,25 @@ table {
   width: 30%;
 }
 
+.mainTd, .dateTd {
+  border-bottom: none;
+  vertical-align: bottom;
+}
+
+.subTd, .timeTd {
+  vertical-align: top;
+}
+
+.timeTd, .dateTd {
+  margin: 0;
+  padding: 0;
+}
+
 /************
 Text Elements
 ************/
 
-#bannerHeader, h1, h2, h5, h6, p, td {
+#bannerHeader, .giftsBtn, h1, h2, h5, h6, p, td {
   color: #000;
 }
 
@@ -127,6 +195,13 @@ h2 {
   font-size: 1.75rem;
   font-weight: 400;
   margin-bottom: 35%;
+}
+
+h3 {
+  color: inherit;
+  font-size: 1.5rem;
+  text-shadow: inherit;
+  font-weight: 300;
 }
 
 h4, h6 {
@@ -151,6 +226,7 @@ p {
   text-align: justify;
   text-indent: 2.5rem;
   margin: 4% auto;
+  padding: 0 3%;
 }
 
 a {
@@ -191,13 +267,15 @@ th {
 }
 
 td {
-  padding: 1.5% 0%;
+  padding: 1.5% 0.5%;
   font-size: 2rem;
 }
 
-.description {
+#subDirJM, #dirJM, .description {
   font-size: 1.5rem;
   text-transform: none;
+  text-align: justify;
+  text-indent: 1.5rem;
 }
 
 /*************************
@@ -214,7 +292,7 @@ Responsive Media Inquiries
   th {
     font-size: 2.25rem;
   }
-  h2, .description {
+  h2, #subDirJM, #dirJM, .description {
     font-size: 1.35rem;
   }
   h4, h6 {
@@ -235,7 +313,7 @@ Responsive Media Inquiries
   th {
     font-size: 2.1rem;
   }
-  h2, .description {
+  h2, #subDirJM, #dirJM, .description {
     font-size: 1.25rem;
   }
   h4, h6 {
@@ -256,7 +334,7 @@ Responsive Media Inquiries
   th {
     font-size: 2rem;
   }
-  h2, .description {
+  h2, #subDirJM, #dirJM, .description {
     font-size: 1.15rem;
   }
   h4, h6 {
@@ -267,9 +345,16 @@ Responsive Media Inquiries
   }
   p {
     font-size: 1.75rem;
+    text-indent: 2rem;
   }
-  li, td {
+  li {
     font-size: 1.5rem;
+  }
+  td {
+    font-size: 1.35rem;
+  }
+  #subDirJM, #dirJM, .description {
+    text-indent: 1rem;
   }
 }
 
@@ -283,14 +368,17 @@ Responsive Media Inquiries
   th {
     font-size: 1.8rem;
   }
-  h2, .description {
+  h2, #subDirJM, #dirJM, .description {
     font-size: 1.1rem;
+  }
+  h3 {
+    font-size: 1.25rem;
   }
   h4, h6 {
     font-size: 2.2rem;
   }
   td {
-    font-size: 1.35rem;
+    font-size: 1.25rem;
   }
 }
 
@@ -298,6 +386,10 @@ Responsive Media Inquiries
   .sectionContent {
     width: 95%;
     max-width: 480px;
+  }
+  .giftsBtn {
+    padding-top: 175px;
+    height: 225px;
   }
   .section {
     padding: 4% 5% 20% 5%;
@@ -311,7 +403,7 @@ Responsive Media Inquiries
   th {
     font-size: 1.5rem;
   }
-  h2, .description {
+  h2, #subDirJM, #dirJM, .description {
     font-size: 0.9rem;
   }
   h4, h6 {
@@ -322,9 +414,10 @@ Responsive Media Inquiries
   }
   p {
     font-size: 1.6rem;
+    text-indent: 1.5rem;
   }
   td {
-    font-size: 1.2rem;
+    font-size: 1.15rem;
   }
 }
 
@@ -341,19 +434,28 @@ Responsive Media Inquiries
   th {
     font-size: 1.25rem;
   }
-  h2, .description {
+  h2, #subDirJM, #dirJM, .description {
     font-size: 0.75rem;
+  }
+  h6 {
+    font-size: 1.75rem;
   }
   td {
     font-size: 1rem;
   }
+  #subDirJM, #dirJM, .description {
+    text-indent: 0.75rem;
+  }
 }
 
 @media only screen and (max-width: 540px) {
+  .giftsBtn {
+    padding-top: 125px;
+    height: 175px;
+  }
   #bannerHeader {
     font-size: 2rem;
   }
-
   h4 {
     font-size: 1.75rem;
   }
@@ -363,12 +465,18 @@ Responsive Media Inquiries
   h2 {
     font-size: 0.6rem;
   }
-  .sectionHeader, .scheduleHeader, .line, th, td {
+  h3 {
+    font-size: 1.15rem;
+  }
+  .sectionHeader, #scheduleHeader, .line, th, td {
     border-width: 1px;
   }
   li {
     font-size: 1.75rem;
     display: block;
+  }
+  td {
+    font-size: 0.85rem;
   }
 }
 
@@ -380,7 +488,10 @@ Responsive Media Inquiries
     font-size: 1.4rem;
   }
   td {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
+  }
+  #subDirJM, #dirJM, .description {
+    font-size: 0.65rem;
   }
 }
 
@@ -398,3 +509,4 @@ Responsive Media Inquiries
     font-size: 0.75rem;
   }
 }
+
