@@ -30,8 +30,8 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Julius Sans One', sans-serif;
-  font-weight: 100;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
   text-align: center;
   color: #fff;
 }
@@ -41,7 +41,7 @@ Containers
 *********/
 
 .banner {
-  padding: 6% 4% 20% 25%;
+  padding: 4% 0;
   background-color: #f1f1f4;
   background-image: url("beachPic.png");
   background-size: cover;
@@ -92,6 +92,7 @@ Containers
 }
 
 table {
+  margin-bottom: 4%;
   border-collapse: collapse;
 }
 
@@ -107,12 +108,12 @@ table {
 Text Elements
 ************/
 
-#bannerHeader, h1, h2, h3, h5, h6, p, td {
+#bannerHeader, h1, h2, h5, h6, p, td {
   color: #000;
 }
 
 #bannerHeader {
-  font-size: 4.5rem;
+  font-size: 5rem;
   font-weight: 300;
 }
 
@@ -123,12 +124,9 @@ h1 {
 }
 
 h2 {
-  font-size: 2.5rem;
-  margin: 2% auto 15% auto;
-}
-
-h3 {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
+  font-weight: 400;
+  margin-bottom: 30%;
 }
 
 h4, h6 {
@@ -137,7 +135,9 @@ h4, h6 {
 }
 
 h5 {
-  font-size: 2.75rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 2.5rem;
 }
 
 .line {
@@ -147,7 +147,6 @@ h5 {
 }
 
 p {
-  font-family: 'Encode Sans Condensed', sans-serif;
   font-size: 2rem;
   text-align: justify;
   text-indent: 2.5rem;
@@ -170,6 +169,7 @@ li {
   margin-left: 2%;
   margin-right: 2%;
   font-size: 2rem;
+  text-transform: uppercase;
   text-shadow: 1px 1px 1px #000;
 }
 
@@ -179,6 +179,7 @@ li:hover {
 }
 
 th, td {
+  text-transform: uppercase;
   border-bottom: 2px solid black;
 }
 
@@ -195,8 +196,8 @@ td {
 }
 
 .description {
-  font-family: 'Encode Sans Condensed', sans-serif;
   font-size: 1.5rem;
+  text-transform: none;
 }
 
 /*************************
@@ -210,10 +211,10 @@ Responsive Media Inquiries
   h1 {
     font-size: 3.5rem;
   }
-  h2, th {
+  th {
     font-size: 2.25rem;
   }
-  h3, .description {
+  h2, .description {
     font-size: 1.35rem;
   }
   h4, h6 {
@@ -231,10 +232,10 @@ Responsive Media Inquiries
   h1 {
     font-size: 3.35rem;
   }
-  h2, th {
+  th {
     font-size: 2.1rem;
   }
-  h3, .description {
+  h2, .description {
     font-size: 1.25rem;
   }
   h4, h6 {
@@ -252,10 +253,10 @@ Responsive Media Inquiries
   h1 {
     font-size: 3.15rem;
   }
-  h2, th {
+  th {
     font-size: 2rem;
   }
-  h3, .description {
+  h2, .description {
     font-size: 1.15rem;
   }
   h4, h6 {
@@ -279,10 +280,10 @@ Responsive Media Inquiries
   h1 {
     font-size: 2.9rem;
   }
-  h2, th {
+  th {
     font-size: 1.8rem;
   }
-  h3, .description {
+  h2, .description {
     font-size: 1.1rem;
   }
   h4, h6 {
@@ -307,10 +308,10 @@ Responsive Media Inquiries
   h1 {
     font-size: 2.5rem;
   }
-  h2, th {
+  th {
     font-size: 1.5rem;
   }
-  h3, .description {
+  h2, .description {
     font-size: 0.9rem;
   }
   h4, h6 {
@@ -337,10 +338,10 @@ Responsive Media Inquiries
   h1 {
     font-size: 2rem;
   }
-  h2, th {
+  th {
     font-size: 1.25rem;
   }
-  h3, .description {
+  h2, .description {
     font-size: 0.75rem;
   }
   td {
@@ -356,10 +357,10 @@ Responsive Media Inquiries
   h4 {
     font-size: 1.75rem;
   }
-  h2, th {
+  th {
     font-size: 1.15rem;
   }
-  h3 {
+  h2 {
     font-size: 0.6rem;
   }
   .sectionHeader, .scheduleHeader, .line, th, td {
@@ -375,11 +376,8 @@ Responsive Media Inquiries
   #bannerHeader {
     font-size: 1.75rem;
   }
-  h2 {
-    font-size: 1rem;
-  }
   h6 {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
   }
   td {
     font-size: 0.8rem;
@@ -389,9 +387,6 @@ Responsive Media Inquiries
 @media only screen and (max-width: 420px) {
   #bannerHeader {
     font-size: 1.4rem;
-  }
-  h2 {
-    font-size: .8rem;
   }
   h5 {
     font-size: 1.75rem;
