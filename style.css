@@ -1,7 +1,6 @@
 /**********************
 Font Families:
   font-family: 'Bombshell Pro', cursive;
-  font-family: 'Julius Sans One', cursive;
 
 Color Pallette:
   #afcfbf; //grey-green
@@ -22,7 +21,7 @@ Color Pallette:
 Large Scale Selectors
 ********************/
 
-html {
+body {
   background-color: #6f8490;
   font-size: 16px;
 }
@@ -53,16 +52,8 @@ Containers
 }
 
 .section {
-  padding: 4% 10% 20% 10%;
+  padding: 4% 10%;
   background-color: #92b2a2;
-}
-
-#storySection {
-  margin-top: 0%;
-}
-
-#giftsSection {
-  margin-bottom: 6%;
 }
 
 .sectionHeader {
@@ -76,7 +67,7 @@ Containers
 .sectionContent {
   width: 75%;
   margin: 8% auto;
-  max-width: 625px;
+  max-width: 725px;
 }
 
 .storyBody {
@@ -168,6 +159,15 @@ table {
   vertical-align: top;
 }
 
+img {
+  width: 95%;
+  box-shadow: 2px 2px 5px #6f8490; //grey-blue
+}
+
+.tall {
+  margin-top: 8%;
+}
+
 /************
 Text Elements
 ************/
@@ -217,12 +217,36 @@ h5 {
   border-bottom: 2px solid #fff;
 }
 
+.textLine {
+  width: 85%;
+  margin: 1% auto;
+  border-bottom: 2px solid #000;
+}
+
 p {
   font-size: 2rem;
   text-align: justify;
   text-indent: 2.5rem;
   margin: 4% auto;
   padding: 0 3%;
+}
+
+.centered {
+  text-align: center;
+  text-indent: 0;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.link {
+  color: #000;
+}
+
+.link:hover {
+  font-weight: bold;
+  color: #f1f1f4;
 }
 
 a {
@@ -238,8 +262,7 @@ a:hover {
 
 li {
   display: inline-block;
-  margin-left: 2%;
-  margin-right: 2%;
+  margin: 0.5% 1.55%;
   font-size: 2rem;
   text-transform: uppercase;
   text-shadow: 1px 1px 1px #000;
@@ -270,8 +293,7 @@ td {
 #subDirJM, #dirJM, .description {
   font-size: 1.5rem;
   text-transform: none;
-  text-align: justify;
-  text-indent: 1.5rem;
+  text-align: center;
 }
 
 /*************************
@@ -349,9 +371,6 @@ Responsive Media Inquiries
   td {
     font-size: 1.35rem;
   }
-  #subDirJM, #dirJM, .description {
-    text-indent: 1rem;
-  }
 }
 
 @media only screen and (max-width: 875px) {
@@ -388,7 +407,7 @@ Responsive Media Inquiries
     height: 225px;
   }
   .section {
-    padding: 4% 5% 20% 5%;
+    padding: 4% 5% 8% 5%;
   }
   #bannerHeader {
     font-size: 2.75rem;
@@ -419,7 +438,7 @@ Responsive Media Inquiries
 
 @media only screen and (max-width: 650px) {
   .section {
-    padding: 4% 3% 20% 3%;
+    padding: 4% 3% 8% 3%;
   }
   #bannerHeader {
     font-size: 2.25rem;
@@ -438,9 +457,6 @@ Responsive Media Inquiries
   }
   td {
     font-size: 1rem;
-  }
-  #subDirJM, #dirJM, .description {
-    text-indent: 0.75rem;
   }
 }
 
