@@ -24,6 +24,7 @@ Large Scale Selectors
 body {
   background-color: #6f8490;
   font-size: 16px;
+  text-align: center;
 }
 
 * {
@@ -32,7 +33,6 @@ body {
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
   font-weight: 200;
-  text-align: center;
   color: #fff;
 }
 
@@ -48,7 +48,7 @@ Containers
 }
 
 .nav {
-  margin: 4% auto;
+  margin: 2% auto;
 }
 
 .section {
@@ -62,12 +62,15 @@ Containers
   padding: 2% 0;
   margin: 0% auto;
   border-bottom: 2px solid #000;
+  text-align: center;
 }
 
 .sectionContent {
   width: 75%;
   margin: 8% auto;
   max-width: 725px;
+  text-align: justify;
+  text-indent: 2.5rem;
 }
 
 .storyBody {
@@ -83,6 +86,10 @@ Containers
 
 .giftsBody {
   margin-top: 8%;
+}
+
+.imgContainer {
+  text-align: center;
 }
 
 .giftsBtn {
@@ -160,8 +167,9 @@ table {
 }
 
 img {
-  width: 95%;
+  width: 65%;
   box-shadow: 2px 2px 5px #6f8490; //grey-blue
+  margin: 0 auto;
 }
 
 .tall {
@@ -185,12 +193,14 @@ h1 {
   font-family: 'Bombshell Pro', cursive;
   font-size: 4rem;
   text-shadow: 1px 1px 2px #6f8490;
+  text-align: center;
 }
 
 h2 {
   font-size: 1.75rem;
   font-weight: 400;
   margin-bottom: 35%;
+  text-align: center;
 }
 
 h3 {
@@ -198,17 +208,20 @@ h3 {
   font-size: 1.5rem;
   text-shadow: inherit;
   font-weight: 300;
+  text-align: center;
 }
 
 h4, h6 {
   font-family: 'Bombshell Pro', cursive;
   font-size: 3rem;
+  text-align: center;
 }
 
 h5 {
   text-transform: uppercase;
   font-weight: 300;
   font-size: 2.5rem;
+  text-align: center;
 }
 
 .line {
@@ -225,10 +238,13 @@ h5 {
 
 p {
   font-size: 2rem;
-  text-align: justify;
-  text-indent: 2.5rem;
   margin: 4% auto;
   padding: 0 3%;
+}
+
+p, td {
+  text-align: inherit;
+  text-indent: inherit;
 }
 
 .centered {
@@ -262,7 +278,7 @@ a:hover {
 
 li {
   display: inline-block;
-  margin: 0.5% 1.55%;
+  margin: 0.5% 2%;
   font-size: 2rem;
   text-transform: uppercase;
   text-shadow: 1px 1px 1px #000;
@@ -346,6 +362,9 @@ Responsive Media Inquiries
   #bannerHeader {
     font-size: 3.5rem;
   }
+  .sectionContent {
+    text-indent: 2rem;
+  }
   h1 {
     font-size: 3.15rem;
   }
@@ -363,7 +382,6 @@ Responsive Media Inquiries
   }
   p {
     font-size: 1.75rem;
-    text-indent: 2rem;
   }
   li {
     font-size: 1.5rem;
@@ -409,6 +427,9 @@ Responsive Media Inquiries
   .section {
     padding: 4% 5% 8% 5%;
   }
+  .sectionContent {
+    text-indent: 1.5rem;
+  }
   #bannerHeader {
     font-size: 2.75rem;
   }
@@ -429,7 +450,6 @@ Responsive Media Inquiries
   }
   p {
     font-size: 1.6rem;
-    text-indent: 1.5rem;
   }
   td {
     font-size: 1.15rem;
