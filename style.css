@@ -21,7 +21,7 @@ Color Pallette:
 Large Scale Selectors
 ********************/
 
-body {
+html {
   background-color: #6f8490;
   font-size: 16px;
   text-align: center;
@@ -33,7 +33,7 @@ body {
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
   font-weight: 200;
-  color: #fff;
+  color: #000;
 }
 
 /*********
@@ -52,44 +52,29 @@ Containers
 }
 
 .section {
-  padding: 4% 10%;
+  padding: 4% 5%;
   background-color: #92b2a2;
 }
 
 .sectionHeader {
-  width: 65%;
+  width: 80%;
   min-width: 250px;
-  padding: 2% 0;
-  margin: 0% auto;
-  border-bottom: 2px solid #000;
-  text-align: center;
+  max-width: 850px;
+  margin: 0 auto;
+  border-bottom: 2px solid black;
+}
+
+#subSectionHeader {
+  margin: 4% auto;
+  padding-top: 4%;
+  border-top: 2px solid black;
+  border-bottom: 0;
 }
 
 .sectionContent {
-  width: 75%;
+  width: 70%;
   margin: 8% auto;
   max-width: 725px;
-  text-align: justify;
-  text-indent: 2.5rem;
-}
-
-.storyBody {
-  margin: 2% auto 10% auto;
-}
-
-.subSectionHeader {
-  width: 65%;
-  min-width: 250px;
-  margin: 6% auto 4% auto;
-  padding-top: 5%;
-}
-
-.giftsBody {
-  margin-top: 8%;
-}
-
-.imgContainer {
-  text-align: center;
 }
 
 .giftsBtn {
@@ -97,11 +82,11 @@ Containers
   background-size: contain;
   background-repeat: no-repeat;
   background-color: white;
-  display: block;
-  width: 70%;
-  height: 250px;
-  border: 3px solid black;
-  margin: 5% auto;
+  display: inline-block;
+  width: 25%;
+  height: 175px;
+  border: 2px solid black;
+  margin: 5% 2%;
 }
 
 #crate {
@@ -116,147 +101,81 @@ Containers
   background-image: url("ZolaLogo.jpg");
 }
 
-#honeymoonBtn:hover {
-  background-image: url("honeymoonDark.jpeg");
-}
-
-#scheduleHeader {
-  border-top: 2px solid #000;
-}
-
 table {
+  margin: 0 auto;
+  max-width: 1100px;
   border-collapse: collapse;
-  margin-bottom: 2%;
 }
 
-#directionsTable {
-  margin-bottom: 4%;
-}
-
-#venueTb {
-  width: 30%;
-}
-
-#directionsTb {
-  text-align: center;
-  width: 70%;
-}
-
-#eventTb, #timeTb {
+.width-20 {
   width: 20%;
 }
 
-#locationTb, #descriptionTb {
+.width-30 {
   width: 30%;
 }
 
-.mainTd {
-  border-bottom: none;
-  vertical-align: bottom;
-}
-
-.subTd {
-  vertical-align: top;
-}
-
 img {
-  width: 65%;
-  box-shadow: 2px 2px 5px #6f8490; //grey-blue
+  display: block;
   margin: 0 auto;
+  width: 65%;
+  border: 1px solid #6f8490; //grey-blue
 }
 
-.tall {
-  margin-top: 8%;
-  text-decoration: underline;
+.line {
+  width: 85%;
+  margin: 1% auto;
+  border-bottom: 2px solid black;
 }
 
 /************
 Text Elements
 ************/
 
-#bannerHeader, .giftsBtn, h1, h2, h5, h6, p, td {
-  color: #000;
-}
-
-#bannerHeader {
-  font-size: 5rem;
-  font-weight: 300;
+h1, h3, h4 {
+  font-family: 'Bombshell Pro', cursive;
 }
 
 h1 {
-  font-family: 'Bombshell Pro', cursive;
-  font-size: 4rem;
-  text-shadow: 1px 1px 2px #6f8490;
-  text-align: center;
+  font-size: 5.5em;
+  font-weight: 300;
 }
 
 h2 {
-  font-size: 1.75rem;
+  font-size: 2em;
   font-weight: 400;
   margin-bottom: 35%;
-  text-align: center;
 }
 
 h3 {
-  color: inherit;
-  font-size: 1.5rem;
-  text-shadow: inherit;
-  font-weight: 300;
-  text-align: center;
+  font-size: 4em;
 }
 
-h4, h6 {
-  font-family: 'Bombshell Pro', cursive;
-  font-size: 3rem;
-  text-align: center;
+h4 {
+  font-size: 3em;
 }
 
 h5 {
   text-transform: uppercase;
   font-weight: 300;
-  font-size: 2.5rem;
-  text-align: center;
-}
-
-.line {
-  width: 65%;
-  margin: 0 auto 2.5% auto;
-  border-bottom: 2px solid #fff;
-}
-
-.textLine {
-  width: 85%;
-  margin: 1% auto;
-  border-bottom: 2px solid #000;
+  font-size: 3em;
 }
 
 p {
-  font-size: 2rem;
+  font-size: 2em;
   margin: 4% auto;
-  padding: 0 3%;
-}
-
-p, td {
-  text-align: inherit;
-  text-indent: inherit;
-}
-
-.centered {
-  text-align: center;
-  text-indent: 0;
 }
 
 .bold {
   font-weight: bold;
 }
 
-.link {
-  color: #000;
+.tall {
+  margin-top: 10%;
+  text-decoration: underline;
 }
 
 .link:hover {
-  cursor: pointer;
-  font-weight: bold;
   color: #f1f1f4;
 }
 
@@ -264,7 +183,7 @@ a {
   text-decoration: none;
   font-family: inherit;
   font-size: inherit;
-  color: #fff;
+  color: inherit;
 }
 
 a:hover {
@@ -275,9 +194,10 @@ a:hover {
 li {
   display: inline-block;
   margin: 0.5% 2%;
-  font-size: 2rem;
+  font-size: 1.85em;
   text-transform: uppercase;
   text-shadow: 1px 1px 1px #000;
+  color: #fff;
 }
 
 li:hover {
@@ -293,19 +213,17 @@ th, td {
 th {
   padding-bottom: 2%;
   color: #fff;
-  text-shadow: 1px 1px 3px #6f8490;
-  font-size: 2.5rem;
+  font-size: 2.5em;
 }
 
 td {
   padding: 1.5% 0.5%;
-  font-size: 2rem;
+  font-size: 2em;
 }
 
-#subDirJM, #dirJM, .description {
-  font-size: 1.5rem;
+.description {
+  font-size: 1.5em;
   text-transform: none;
-  text-align: center;
 }
 
 /*************************
@@ -313,227 +231,110 @@ Responsive Media Inquiries
 *************************/
 
 @media only screen and (max-width: 1200px) {
-  #bannerHeader {
-    font-size: 4rem;
-  }
-  h1 {
-    font-size: 3.5rem;
-  }
-  th {
-    font-size: 2.25rem;
-  }
-  h2, #subDirJM, #dirJM, .description {
-    font-size: 1.35rem;
-  }
-  h4, h6 {
-    font-size: 2.75rem;
-  }
-  li, td {
-    font-size: 1.75rem;
+  html {
+    font-size: 14px;
   }
 }
 
-@media only screen and (max-width: 1050px) {
-  #bannerHeader {
-    font-size: 3.75rem;
-  }
-  h1 {
-    font-size: 3.35rem;
-  }
-  th {
-    font-size: 2.1rem;
-  }
-  h2, #subDirJM, #dirJM, .description {
-    font-size: 1.25rem;
-  }
-  h4, h6 {
-    font-size: 2.5rem;
-  }
-  li, td {
-    font-size: 1.65rem;
+@media only screen and (max-width: 1100px) {
+  html {
+    font-size: 13px;
   }
 }
 
-@media only screen and (max-width: 975px) {
-  #bannerHeader {
-    font-size: 3.5rem;
-  }
-  .sectionContent {
-    text-indent: 2rem;
-  }
-  h1 {
-    font-size: 3.15rem;
-  }
-  th {
-    font-size: 2rem;
-  }
-  h2, #subDirJM, #dirJM, .description {
-    font-size: 1.15rem;
-  }
-  h4, h6 {
-    font-size: 2.35rem;
-  }
-  h5 {
-    font-size: 2.5rem;
-  }
-  p {
-    font-size: 1.75rem;
-  }
-  li {
-    font-size: 1.5rem;
-  }
-  td {
-    font-size: 1.35rem;
+@media only screen and (max-width: 1000px) {
+  html {
+    font-size: 12px;
   }
 }
 
-@media only screen and (max-width: 875px) {
-  #bannerHeader {
-    font-size: 3.25rem;
-  }
-  h1 {
-    font-size: 2.9rem;
-  }
-  th {
-    font-size: 1.8rem;
-  }
-  h2, #subDirJM, #dirJM, .description {
-    font-size: 1.1rem;
-  }
-  h3 {
-    font-size: 1.25rem;
-  }
-  h4, h6 {
-    font-size: 2.2rem;
-  }
-  td {
-    font-size: 1.25rem;
+@media only screen and (max-width: 900px) {
+  html {
+    font-size: 11.25px;
   }
 }
 
-@media only screen and (max-width: 775px) {
+@media only screen and (max-width: 800px) {
+  html {
+    font-size: 10.5px;
+  }
   .sectionContent {
     width: 95%;
     max-width: 480px;
   }
-  .giftsBtn {
-    padding-top: 175px;
-    height: 225px;
-  }
-  .section {
-    padding: 4% 5% 8% 5%;
-  }
-  .sectionContent {
-    text-indent: 1.5rem;
-  }
-  #bannerHeader {
-    font-size: 2.75rem;
-  }
-  h1 {
-    font-size: 2.5rem;
-  }
-  th {
-    font-size: 1.5rem;
-  }
-  h2, #subDirJM, #dirJM, .description {
-    font-size: 0.9rem;
-  }
-  h4, h6 {
-    font-size: 1.85rem;
-  }
-  h5 {
-    font-size: 2rem;
-  }
   p {
-    font-size: 1.6rem;
+    font-size: 2.25em;
   }
-  td {
-    font-size: 1.15rem;
+  th, td {
+    border-width: 1px;
+  }
+  .giftsBtn {
+    display: block;
+    width: 70%;
+    margin: 5% auto;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  html {
+    font-size: 9.75px;
   }
 }
 
 @media only screen and (max-width: 650px) {
-  .section {
-    padding: 4% 3% 8% 3%;
-  }
-  #bannerHeader {
-    font-size: 2.25rem;
-  }
   h1 {
-    font-size: 2rem;
-  }
-  th {
-    font-size: 1.25rem;
-  }
-  h2, #subDirJM, #dirJM, .description {
-    font-size: 0.75rem;
-  }
-  h6 {
-    font-size: 1.75rem;
-  }
-  td {
-    font-size: 1rem;
-  }
-}
-
-@media only screen and (max-width: 540px) {
-  .giftsBtn {
-    padding-top: 125px;
-    height: 175px;
-  }
-  #bannerHeader {
-    font-size: 2rem;
-  }
-  h4 {
-    font-size: 1.75rem;
-  }
-  th {
-    font-size: 1.15rem;
+    font-size: 5em;
   }
   h2 {
-    font-size: 0.6rem;
-  }
-  h3 {
-    font-size: 1.15rem;
-  }
-  .sectionHeader, #scheduleHeader, .line, th, td {
-    border-width: 1px;
-  }
-  li {
-    font-size: 1.75rem;
-    display: block;
-  }
-  td {
-    font-size: 0.85rem;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  #bannerHeader {
-    font-size: 1.75rem;
-  }
-  h6 {
-    font-size: 1.4rem;
-  }
-  td {
-    font-size: 0.75rem;
-  }
-  #subDirJM, #dirJM, .description {
-    font-size: 0.65rem;
-  }
-}
-
-@media only screen and (max-width: 420px) {
-  #bannerHeader {
-    font-size: 1.4rem;
-  }
-  h5 {
-    font-size: 1.75rem;
+    font-size: 1.75em;
   }
   p {
-    font-size: 1.4rem;
+    font-size: 2.5em;
+  }
+  th {
+    font-size: 2em;
   }
   td {
-    font-size: 0.75rem;
+    font-size: 1.5em;
+  }
+  li {
+    display: block;
+    font-size: 3em;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 9px;
+  }
+  p {
+    font-size: 2.65em;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  html {
+    font-size: 8.5px;
+  }
+  h1 {
+    font-size: 4.5em;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  html {
+    font-size: 8px;
+  }
+  p {
+    font-size: 2.85em;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  h1 {
+    font-size: 4em;
   }
 }
