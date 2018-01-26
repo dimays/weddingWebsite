@@ -93,34 +93,27 @@ Containers
 }
 
 .giftsBtn {
-  background-position: top center;
-  background-size: cover;
-  display: inline-block;
-  width: 47%;
-  padding-top: 225px;
-  height: 275px;
-  border-radius: 8%;
-  text-shadow: 1px 1px 1px #fff;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: white;
+  display: block;
+  width: 70%;
+  height: 250px;
+  border: 3px solid black;
+  margin: 5% auto;
 }
 
-.giftsBtn:hover {
-  cursor: pointer;
-  color: #fff;
-  text-shadow: 1px 1px 1px #000;
+#crate {
+  background-image: url("CrateLogo.jpg");
 }
 
-#registryBtn {
-  background-image: url("gifts.jpeg");
-  margin-right: 2%;
+#amazon {
+  background-image: url("AmazonLogo.png");
 }
 
-#registryBtn:hover {
-  background-image: url("giftsDark.jpg");
-}
-
-#honeymoonBtn {
-  background-image: url("honeymoon.jpg");
-  margin-left: 2%;
+#zola {
+  background-image: url("ZolaLogo.jpg");
 }
 
 #honeymoonBtn:hover {
@@ -174,6 +167,7 @@ img {
 
 .tall {
   margin-top: 8%;
+  text-decoration: underline;
 }
 
 /************
@@ -261,6 +255,7 @@ p, td {
 }
 
 .link:hover {
+  cursor: pointer;
   font-weight: bold;
   color: #f1f1f4;
 }
@@ -273,6 +268,7 @@ a {
 }
 
 a:hover {
+  cursor: pointer;
   color: #6f8490;
 }
 
