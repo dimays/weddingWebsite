@@ -34,14 +34,20 @@ function main() {
   }, 1);
   });
 
-  $('#giftsBtn').on('click', function() {
+  $('#registryBtn').on('click', function() {
     $('html, body').animate({
       scrollTop:
     ($('#giftsHeader').offset().top)
+  }, 1);
+  });
+
+  $('#activitiesBtn').on('click', function() {
+    $('html, body').animate({
+      scrollTop:
+    ($('#activitiesHeader').offset().top)
   }, 1);
   });
 }
 
 // Checks that the file has fully loaded before running main function
 $(document).ready(main);
-
