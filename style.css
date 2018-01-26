@@ -334,9 +334,7 @@ Responsive Media Inquiries
 }
 
 @media only screen and (max-width: 450px) {
-  html {
-    font-size: 7px;
   h1 {
-    font-size: 4em;
+    font-size: 3.5em;
   }
 }
