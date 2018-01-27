@@ -48,7 +48,7 @@ Containers
 }
 
 .nav {
-  margin: 2% auto;
+  margin: 3% auto;
 }
 
 .section {
@@ -56,24 +56,27 @@ Containers
   background-color: #92b2a2;
 }
 
+#giftsSection {
+  padding-top: 0;
+}
+
 .sectionHeader {
   width: 80%;
   min-width: 250px;
   max-width: 850px;
   margin: 0 auto;
+  padding: 1% 0;
   border-bottom: 2px solid black;
 }
 
-#subSectionHeader {
-  margin: 4% auto;
-  padding-top: 4%;
-  border-top: 2px solid black;
+#scheduleHeader {
+  margin: 1.5% auto;
   border-bottom: 0;
 }
 
 .sectionContent {
   width: 70%;
-  margin: 8% auto;
+  margin: 4% auto;
   max-width: 725px;
 }
 
@@ -117,13 +120,14 @@ table {
 
 img {
   display: block;
-  margin: 0 auto;
-  width: 65%;
+  margin: 5% auto;
+  width: 70%;
+  min-width: 300px;
   border: 1px solid #6f8490; //grey-blue
 }
 
 .line {
-  width: 85%;
+  width: 100%;
   margin: 1% auto;
   border-bottom: 2px solid black;
 }
@@ -193,7 +197,7 @@ a:hover {
 
 li {
   display: inline-block;
-  margin: 0.5% 2%;
+  margin: 0 2%;
   font-size: 1.85em;
   text-transform: uppercase;
   text-shadow: 1px 1px 1px #000;
@@ -270,6 +274,7 @@ Responsive Media Inquiries
   }
   .giftsBtn {
     display: block;
+    height: 150px;
     width: 70%;
     margin: 5% auto;
   }
@@ -322,6 +327,9 @@ Responsive Media Inquiries
   h2 {
     font-size: 1.5em;
   }
+  .giftsBtn {
+    height: 125px;
+  }
 }
 
 @media only screen and (max-width: 500px) {
@@ -335,6 +343,6 @@ Responsive Media Inquiries
 
 @media only screen and (max-width: 450px) {
   h1 {
-    font-size: 3.5em;
+    font-size: 4em;
   }
 }
