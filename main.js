@@ -27,13 +27,6 @@ function main() {
   }, 1);
   });
 
-  $('#rsvpBtn').on('click', function() {
-    $('html, body').animate({
-      scrollTop:
-    ($('#rsvpHeader').offset().top)
-  }, 1);
-  });
-
   $('#registryBtn').on('click', function() {
     $('html, body').animate({
       scrollTop:
