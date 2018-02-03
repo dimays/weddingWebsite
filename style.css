@@ -122,8 +122,30 @@ img {
   display: block;
   margin: 5% auto;
   width: 70%;
-  min-width: 300px;
+  min-width: 200px;
   border: 1px solid #6f8490; //grey-blue
+}
+
+.ttdCon {
+  display: inline-block;
+  max-width: 300px;
+  vertical-align: top;
+  margin-top: 4%;
+}
+
+.ttdPic {
+  margin: 2% auto;
+  width: 90%;
+  height: 200px;
+}
+
+.ttdLabel {
+  font-size: 24px;
+}
+
+.ttdText {
+  font-size: 18px;
+  margin: 2% 7%;
 }
 
 .line {
